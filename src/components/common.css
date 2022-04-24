@@ -1,0 +1,19 @@
+.main{
+    margin: 10px;
+}
+.btn{
+    border-radius: 35px !important;
+}
+.header{
+    background-color: #0a0a42;
+}
+.headeritem{
+    color: #ffffff !important;
+}
+.btnadd{
+    border-bottom: #0a0a42 5px solid !important;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+}
