@@ -17,7 +17,7 @@ export const AddPatient = () => {
   };
   return (
     <div>
-      <h2>Add Patient</h2>
+      <h2>Add Patients</h2>
       <Grid container spacing={2}>
         <Grid item xs={2}>
           <TextField
