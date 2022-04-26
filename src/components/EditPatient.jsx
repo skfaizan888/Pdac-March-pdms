@@ -4,7 +4,7 @@ import { Grid, TextField, Button } from "@mui/material";
 
 export const EditPatient = () => {
   return (
-    <div>
+    <div className="content-addPatient-main">
       <h2>Edit Patient</h2>
       <Grid container spacing={2}>
         <Grid item xs={2}>
@@ -36,7 +36,7 @@ export const EditPatient = () => {
         </Grid>
         <Grid item xs={1}>
           <Link to="/">
-            <Button className="btn" variant="contained">
+            <Button className="btn" variant="outlined" color="error">
               Cancel
             </Button>
           </Link>

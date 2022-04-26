@@ -16,6 +16,7 @@ export const AddPatient = () => {
     email: yup
       .string("Enter your email")
       .email("Enter a valid email")
+
       .required("Email is required"),
   });
   const formik = useFormik({
@@ -32,7 +33,7 @@ export const AddPatient = () => {
     await axios.get(urlAdd);
   };
   return (
-    <div>
+    <div className="content-addPatient-main">
       <h2>Add Patient</h2>
       <Grid container spacing={2}>
         <Grid item xs={2}>
@@ -90,7 +91,7 @@ export const AddPatient = () => {
         </Grid>
         <Grid item xs={6}></Grid>
         <Grid item xs={4}></Grid>
-        <Grid item xs={1}>
+        <Grid item>
           <Link to="/">
             <Button className="btn" variant="contained" onClick={handleAdd}>
               Add
@@ -99,7 +100,7 @@ export const AddPatient = () => {
         </Grid>
         <Grid item xs={1}>
           <Link to="/">
-            <Button className="btn" variant="contained">
+            <Button className="btn" variant="outlined" color="error">
               Cancel
             </Button>
           </Link>

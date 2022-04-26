@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import axios from "axios";
 import {
   Grid,
@@ -34,12 +37,12 @@ export const Dashboard = () => {
         <Grid item xs={12}>
           <Link to="/add">
             <Button className="btnadd" variant="text">
-              + Add Patient
+              <AddCircleOutlineIcon className="content-add-icon" /> Add Patient
             </Button>
           </Link>
         </Grid>
         <Grid item>
-          <Table>
+          <Table className="table-main">
             <TableHead className="header">
               <TableRow>
                 <TableCell className="headeritem">#</TableCell>
@@ -66,7 +69,12 @@ export const Dashboard = () => {
                   <TableCell>{item.pincode}</TableCell>
                   <TableCell>
                     <Link to="/edit">
-                      <Button className="btn" variant="contained">
+                      <Button
+                        startIcon={<EditIcon />}
+                        style={{ color: "#0a4d8f" }}
+                        className="btn"
+                        variant="outlined"
+                      >
                         Edit
                       </Button>
                     </Link>
@@ -75,7 +83,8 @@ export const Dashboard = () => {
                     <Button
                       className="btn"
                       color="error"
-                      variant="contained"
+                      variant="outlined"
+                      startIcon={<DeleteIcon />}
                       onClick={() => handleDelete(item.email)}
                     >
                       Delete

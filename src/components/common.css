@@ -1,19 +1,39 @@
 .main{
-    margin: 10px;
+    margin: 40px;
+}
+.table-main{
+    margin-left: 80px;
 }
 .btn{
     border-radius: 35px !important;
 }
 .header{
-    background-color: #0a0a42;
+    background-color: #0a4d8f;
 }
 .headeritem{
     color: #ffffff !important;
 }
+.content-add-icon{
+    font-size: 35px !important;
+    margin-left: -5px;
+    margin: 2px;
+}
 .btnadd{
-    border-bottom: #0a0a42 5px solid !important;
-    margin: 10px;
+    border-bottom: #0a4d8f 5px solid !important;
+    margin: 20px !important;
+    margin-left: 80px !important;
+    color: #0a4d8f !important;
+    font-size: 15px !important;
 }
 a{
     text-decoration: none;
+}
+
+
+/* AddPatient CSS */
+
+.content-addPatient-main{
+    position: relative;
+    left: 320px;
+    top: 50px;
 }
